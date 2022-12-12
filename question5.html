@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var bill = 0;
+      var Total_bill = 0;
+      var units=300;
+
+      if (units > 0 && units <= 50)
+      {
+        bill = bill + units * 0.5;
+        Total_bill = Total_bill + bill;
+      } 
+      else if (units > 50 && units <= 150)
+      {
+        bill = bill + 50 * 0.5 + (units - 50) * 0.75;
+        Total_bill = Total_bill + bill;
+      } 
+      else if (units > 150 && units <= 250) 
+      {
+        bill = bill + 50 * 0.5 + 100 * 0.75 + (units - 150) * 1.2;
+        Total_bill = Total_bill + bill;
+      } 
+      else if (units > 250)
+       {
+        bill = bill + 50 * 0.5 + 100 * 0.75 + 100 * 1.2 + (units - 250) * 1.5;
+        Total_bill = Total_bill + bill + bill * 0.2;
+      }
+
+      console.log("Total Bill = ", Total_bill);
+    </script>
+  </body>
+</html>

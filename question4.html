@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var A = Number(prompt("provide the needs 'A'"));
+      var B = Number(prompt("provide the needs 'B'"));
+      var C = Number(prompt("provide the needs 'C'"));
+
+      if (A == B && A == C) {
+        console.log("Equilateral Triangle");
+      } else if (A == B || A == C || B == C) {
+        console.log("Isosceles Triangle");
+      } else {
+        console.log("Scalene Triangle");
+      }
+    </script>
+  </body>
+</html>
